@@ -29,3 +29,4 @@ const decoded = CryptoJS.DES.decrypt(
 )
 
 console.log(decoded.toString(CryptoJS.enc.Utf8))
+console.log("Actualizado")
