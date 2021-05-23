@@ -7,6 +7,7 @@
 // @match        file:///C:/Users/Vicente/Desktop/Universidad2021_1/criptografia/Tarea3/index.html
 // @icon         https://www.google.com/s2/favicons?domain=google.com
 // @grant        none
+// @require      https://github.com/VicenteAlday/cifradoEnProduccion/edit/main/desecb.user.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js
 // ==/UserScript==
 
@@ -23,7 +24,7 @@ const decoded = CryptoJS.DES.decrypt(
   keyHex,
   {
     mode: CryptoJS.mode.ECB,
-    padding: CryptoJS.pad.NoPadding //no se como funciona esto
+    padding: CryptoJS.pad.NoPadding
   }
 )
 
