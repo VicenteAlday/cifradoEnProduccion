@@ -23,7 +23,7 @@ const decoded = CryptoJS.DES.decrypt(
   keyHex,
   {
     mode: CryptoJS.mode.ECB,
-    padding: CryptoJS.pad.NoPadding //no se como funciona esto
+    padding: CryptoJS.pad.NoPadding 
   }
 )
 
